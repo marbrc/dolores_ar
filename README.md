@@ -37,8 +37,12 @@
 ## VERDE
 <img width="1239" height="87" alt="image" src="https://github.com/user-attachments/assets/a653b88b-a4ae-4008-bf4b-d1ca40c9b4ba" />
 
-
-
+## CAPTURAS
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/3953fc24-8c56-40de-aea0-7b9f87f4a965" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/a028f273-1125-4766-8d47-c004428ef524" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/2bb4b2c2-3cd7-4ae4-adef-b04faf1446fa" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/b2e38c38-20ee-4af7-abb1-42c66e007a8b" />
+<img width="591" height="1280" alt="image" src="https://github.com/user-attachments/assets/2cf5df8e-c1ff-42f1-a5a7-d2b365d23453" />
 
 
 
