@@ -9,12 +9,19 @@ import 'ar_viewmodel.dart';
 import 'pantalla_ar.dart';
 import 'pantalla_modelo3d.dart';
 
-class PantallaInicio extends StatelessWidget {
+class PantallaInicio extends StatefulWidget {
   final Pasaporte pasaporte;
   const PantallaInicio({super.key, required this.pasaporte});
 
-  void _irReal(BuildContext context) {
-    Navigator.push(context, MaterialPageRoute<void>(
+  @override
+  State<PantallaInicio> createState() => _PantallaInicioState();
+}
+
+class _PantallaInicioState extends State<PantallaInicio> {
+  Pasaporte get pasaporte => widget.pasaporte;
+
+  Future<void> _irReal(BuildContext context) async {
+    await Navigator.push(context, MaterialPageRoute<void>(
       builder: (_) => PantallaAr(
         crearVm: () => ArViewModel(
           posicion: PosicionGps(),
@@ -24,12 +31,13 @@ class PantallaInicio extends StatelessWidget {
         ),
       ),
     ));
+    if (mounted) setState(() {});
   }
 
-  void _irDemo(BuildContext context) {
+  Future<void> _irDemo(BuildContext context) async {
     // Te "teletransporta" a la Plaza Principal para practicar en el salón.
     final brujula = BrujulaSimulada();
-    Navigator.push(context, MaterialPageRoute<void>(
+    await Navigator.push(context, MaterialPageRoute<void>(
       builder: (_) => PantallaAr(
         crearVm: () => ArViewModel(
           posicion: PosicionSimulada(const Coordenada(21.15600, -100.93175)),
@@ -40,6 +48,7 @@ class PantallaInicio extends StatelessWidget {
         controlesDemo: _DeslizadorRumbo(brujula: brujula),
       ),
     ));
+    if (mounted) setState(() {});
   }
 
   @override
@@ -82,7 +91,6 @@ class PantallaInicio extends StatelessWidget {
     );
   }
 }
-
 class _DeslizadorRumbo extends StatefulWidget {
   final BrujulaSimulada brujula;
   const _DeslizadorRumbo({required this.brujula});
