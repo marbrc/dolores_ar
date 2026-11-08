@@ -1,7 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import '../lib/dominio/motor_ar.dart';
-import 'ayudas_geo.dart';
+import 'package:dolores_ar/dominio/motor_ar.dart';import 'ayudas_geo.dart';
 
 void main() {
   final frente = lugarEn('frente', desplazar(origen, norte: 100));

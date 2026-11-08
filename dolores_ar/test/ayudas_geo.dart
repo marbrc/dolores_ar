@@ -1,8 +1,8 @@
 // Ayudas compartidas por las pruebas (no es una prueba en sí).
 import 'dart:math' as math;
 
-import '../lib/dominio/geo.dart';
-import '../lib/dominio/lugar.dart';
+import 'package:dolores_ar/dominio/geo.dart';
+import 'package:dolores_ar/dominio/lugar.dart';
 
 const origen = Coordenada(21.1561, -100.9318);
 

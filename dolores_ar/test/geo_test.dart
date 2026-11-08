@@ -1,6 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-
-import '../lib/dominio/geo.dart';
+import 'package:dolores_ar/dominio/geo.dart';
 import 'ayudas_geo.dart';
 
 void main() {
